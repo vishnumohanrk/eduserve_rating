@@ -1,5 +1,11 @@
 # eduserve_rating
 (v0.1)\
+
+<b>Dependencies:</b>
+<ul><li>Selenium for python</li></ul>
+<ul><li>Webdriver for the browser of your choice(I used Firefox)</li></ul>
+
+<b>Info:</b>
 For Students of Karunya University, Coimbatore.\
 Download and extract the README.txt file and the .py file to a separate Folder.
 
