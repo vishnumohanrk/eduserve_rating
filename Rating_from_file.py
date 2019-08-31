@@ -9,8 +9,8 @@ with open('README.txt', 'rt') as my_file:
     for i in my_file:
         lis_file.append(i)
 
-user = lis_file[8][7:]
-pwd = lis_file[9][9:]
+user = lis_file[11][7:]
+pwd = lis_file[12][9:]
 
 elem = driver.find_element_by_xpath('//*[@id="mainContent_Login1_UserName"]')
 elem.send_keys(user)
