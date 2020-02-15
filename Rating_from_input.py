@@ -15,59 +15,13 @@ elem.send_keys(pwd)
 submit = driver.find_element_by_xpath('//*[@id="mainContent_Login1_LoginButton"]')
 submit.click()
 
-try:
-    a = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[1]/td[5]/div/ul/li[5]/a')
-    a.click()
-except:
-    pass
-
-try:
-    b = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[2]/td[5]/div/ul/li[5]/a')
-    b.click()
-except:
-    pass
-
-try:
-    c = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[3]/td[5]/div/ul/li[5]/a')
-    c.click()
-except:
-    pass
-
-try:
-    d = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[4]/td[5]/div/ul/li[5]/a')
-    d.click()
-except:
-    pass
-
-try:
-    e = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[5]/td[5]/div/ul/li[5]/a')
-    e.click()
-except:
-    pass
-
-try:
-    f = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[6]/td[5]/div/ul/li[5]/a')
-    f.click()
-except:
-    pass
-
-try:
-    g = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[7]/td[5]/div/ul/li[5]/a')
-    g.click()
-except:
-    pass
-
-try:
-    h = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[8]/td[5]/div/ul/li[5]/a')
-    h.click()
-except:
-    pass
-
-try:
-    i = driver.find_element_by_xpath('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[8]/td[5]/div/ul/li[5]/a')
-    i.click()
-except:
-    pass
+for i in range(13):
+    try:
+        x = ('/html/body/form/div[3]/div/div[2]/div/div/div/div[2]/div[1]/div/div/div/table/tbody/tr[{}]/td[5]/div/ul/li[5]/a'.format(i))
+        # print(x)
+        driver.find_element_by_xpath(x).click()
+    except:
+        pass
 
 try:
     save = driver.find_element_by_xpath('//*[@id="mainContent_btnSave"]')
